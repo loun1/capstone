@@ -1,0 +1,9 @@
+{
+  "schema": "pack_to_cell_config_v1",
+  "series_cells": 108,
+  "parallel_cells": 32,
+  "cell_basis_id": "m50t-pack-equivalent-cell",
+  "current_sharing": "equal_parallel_current_assumption",
+  "source": "Team Notion M50T ROM report https://app.notion.com/p/4108df1f4d7a81a7bfb4d41b560c2707 ; topology is not supplied by raw_input.csv or metadata.json",
+  "physical_model_compatibility_verified": false
+}

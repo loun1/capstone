@@ -1,0 +1,12 @@
+{
+  "_note": "Reference test conditions (revised plan section 8). The 4 h rest before every reference test is a project standardisation choice.",
+  "reference_test": {
+    "charge_current_A": 1.5,
+    "charge_voltage_V": 4.2,
+    "cv_cutoff_current_A": 0.05,
+    "rest_s": 14400,
+    "discharge_current_A": 0.5,
+    "discharge_cutoff_V": 2.5,
+    "output_period_s": 1
+  }
+}

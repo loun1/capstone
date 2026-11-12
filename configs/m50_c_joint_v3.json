@@ -1,0 +1,24 @@
+{
+  "id": "m50-c-joint-v3",
+  "family": "SPMe",
+  "parameter_set": "OKane2022",
+  "source": {
+    "fit": "joint_initial_fit_v3 C-only RPT0",
+    "frozen_parameters_sha256": "cf3d84343c4570072003ed67e4d1349cdbf69a0b9b7656429df08a629e8c5b33",
+    "native_C_sha256": "da21d56c30f2474e03da107adb87fce0928f32ff0a6c237d5935e81a5b7f2649"
+  },
+  "material_overrides": {
+    "Negative electrode active material volume fraction": 0.6967559773450444,
+    "Positive electrode active material volume fraction": 0.5875134485096078,
+    "Initial concentration in negative electrode [mol.m-3]": 30671.0499722885
+  },
+  "initial_particle_lithium_Ah": 7.094611861277718,
+  "rpt0_rest_initialization": {
+    "effective_soc": 0.3682728761472796,
+    "target_voltage_V": 3.620251866666667,
+    "overrides": {
+      "Initial concentration in negative electrode [mol.m-3]": 12015.410685082348,
+      "Initial concentration in positive electrode [mol.m-3]": 41971.93517526572
+    }
+  }
+}

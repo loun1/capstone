@@ -1,0 +1,18 @@
+{
+  "_note": "Pilot 3x3 combinations (revised plan section 3). Radius-major order; id 4 = both parameters at baseline. Sensitivity design range, not a measured manufacturing distribution.",
+  "baseline": {"negative_particle_radius_m": 5.86e-6, "sei_solvent_diffusivity_m2s": 2.5e-22},
+  "cells": [
+    {"id": 1, "negative_particle_radius_m": 5.274e-6, "sei_solvent_diffusivity_m2s": 2.5e-22},
+    {"id": 2, "negative_particle_radius_m": 5.274e-6, "sei_solvent_diffusivity_m2s": 7.5e-22},
+    {"id": 3, "negative_particle_radius_m": 5.274e-6, "sei_solvent_diffusivity_m2s": 2.5e-21},
+    {"id": 4, "negative_particle_radius_m": 5.86e-6, "sei_solvent_diffusivity_m2s": 2.5e-22},
+    {"id": 5, "negative_particle_radius_m": 5.86e-6, "sei_solvent_diffusivity_m2s": 7.5e-22},
+    {"id": 6, "negative_particle_radius_m": 5.86e-6, "sei_solvent_diffusivity_m2s": 2.5e-21},
+    {"id": 7, "negative_particle_radius_m": 6.446e-6, "sei_solvent_diffusivity_m2s": 2.5e-22},
+    {"id": 8, "negative_particle_radius_m": 6.446e-6, "sei_solvent_diffusivity_m2s": 7.5e-22},
+    {"id": 9, "negative_particle_radius_m": 6.446e-6, "sei_solvent_diffusivity_m2s": 2.5e-21}
+  ],
+  "control_check": {"charge_current_A": 3.3, "discharge_current_A": 5.0, "update_intervals_s": [60, 10],
+                    "charge_time_limit_s": 3600},
+  "grading_run": {"charge_current_A": 1.5, "discharge_current_A": 5.0, "update_interval_s": 60, "efc_stop": 5.0}
+}

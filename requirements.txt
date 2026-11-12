@@ -1,0 +1,11 @@
+# Python 3.11.9. Use a separate BLAST-Lite environment for the long-term driving benchmark.
+
+pybamm==26.8.0.0
+pybammsolvers==0.9.1
+casadi==3.7.2
+numpy==2.4.6
+scipy==1.17.1
+pandas==3.0.5
+
+pyarrow==26.0.0
+scikit-learn==1.9.1

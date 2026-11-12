@@ -1,0 +1,57 @@
+{
+  "_note": "Physical conditions follow docs/modeling_decisions.md. Values under 'verification' are implementation choices for the pre-checks only, not experiment conditions.",
+  "parameter_set": "OKane2022",
+  "temperature_K": 298.15,
+  "options": {
+    "thermal": "isothermal",
+    "SEI": "solvent-diffusion limited",
+    "SEI film resistance": "distributed",
+    "SEI porosity change": "true",
+    "lithium plating": "partially reversible",
+    "lithium plating porosity change": "true"
+  },
+  "voltage_max_V": 4.2,
+  "voltage_min_V": 2.5,
+  "soc_window": [0.2, 0.8],
+  "soc_tolerance": 0.001,
+  "boundary_update_s": 60,
+  "rest_s": 300,
+  "currents_A": {
+    "common_charge": 1.5,
+    "candidates": [3.0, 3.1, 3.2, 3.3],
+    "discharge": 5.0
+  },
+  "variables": {
+    "neg_stoich": "Average negative particle stoichiometry",
+    "Q_n": "Negative electrode capacity [A.h]",
+    "Q_p": "Positive electrode capacity [A.h]",
+    "n_Li_particles": "Total lithium in particles [mol]",
+    "current": "Current [A]",
+    "voltage": "Voltage [V]",
+    "discharge_capacity": "Discharge capacity [A.h]",
+    "state_compare": {
+      "neg_particle_conc": ["Negative particle concentration [mol.m-3]"],
+      "pos_particle_conc": ["Positive particle concentration [mol.m-3]"],
+      "electrolyte_conc": ["Electrolyte concentration [mol.m-3]"],
+      "sei_thickness": ["X-averaged negative total SEI thickness [m]", "X-averaged negative SEI thickness [m]"],
+      "plated_li": ["X-averaged negative lithium plating concentration [mol.m-3]"],
+      "dead_li": ["X-averaged negative dead lithium concentration [mol.m-3]"],
+      "neg_porosity": ["Negative electrode porosity", "X-averaged negative electrode porosity"],
+      "sep_porosity": ["Separator porosity", "X-averaged separator porosity"],
+      "pos_porosity": ["Positive electrode porosity", "X-averaged positive electrode porosity"],
+      "lli_percent": ["Loss of lithium inventory [%]"]
+    }
+  },
+  "verification": {
+    "check_current_A": 3.0,
+    "init_rest_s": 1,
+    "check1_dsoc": [0.003, 0.008],
+    "check1_control_dsoc": 0.3,
+    "check2_total_s": 600,
+    "check2_pieces": 10,
+    "check3_compare_pieces": 10,
+    "check3_memory_pieces": 100,
+    "max_pieces_per_phase": 200,
+    "cv_stall_current_A": 0.001
+  }
+}
